@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -8,6 +11,7 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+          
         },
         "@schematics/angular:application": {
           "strict": true
@@ -31,7 +35,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/font-awesome/css/font-awesome.min.css"
+              
             ],
             "scripts": []
           },
